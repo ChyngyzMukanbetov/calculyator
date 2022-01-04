@@ -13,6 +13,7 @@ public class main {
         String[] subStr;
         subStr = str.split("[+-/*]");
         int num1 = 0;
+        Integer num42 = 123;
         int num2 = 0;
         int result = 0;
         boolean num1IsRoman = false;
@@ -72,7 +73,7 @@ public class main {
                         System.exit(1);
                     }
             }
-            System.out.println(num1); //Проверка правильности конвертации num1
+            //System.out.println(num1); //Проверка правильности конвертации num1
             if (num1IsRoman == true) {
                 switch (subStr[1]) {
                     case "I":
@@ -119,11 +120,11 @@ public class main {
                     System.exit(3);
                 }
             }
-            System.out.println(num2); //Проверка правильности конвертации num2
+            //System.out.println(num2); //Проверка правильности конвертации num2
 
             String operators[] = operation.split("[a-zA-Z0-9]+");
             String operator = operators[1];
-            System.out.println(operator);
+            //System.out.println(operator);
 
             if (num1 <= 10 & num2 <= 10 & num1 >= 0 & num2 >= 0) {
                 if ("+".equals(operator)) {
